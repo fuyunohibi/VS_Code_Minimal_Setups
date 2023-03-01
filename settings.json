@@ -1,0 +1,109 @@
+{
+    "editor.fontSize": 17,
+    "dart.flutterSdkPath": "/Users/capt/flutterSDK/flutter",
+    "editor.inlineSuggest.enabled": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.formatOnPaste": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.guides.bracketPairs": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "files.autoSave": "afterDelay",
+    "code-runner.runInTerminal": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false
+    },
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.gpuAcceleration": "off",
+    "vscode_vibrancy.opacity": 0.1,
+    "json.schemas": [],
+    "vscode_vibrancy.imports": [
+        "/path/to/file"
+    ],
+    "vscode_vibrancy.theme": "Solarized Dark+",
+    "vscode_vibrancy.refreshInterval": 10,
+    "debug.onTaskErrors": "debugAnyway",
+    "C_Cpp.default.cppStandard": "c++11",
+    "window.zoomLevel": -1,
+    "editor.codeActionsOnSave": {},
+    "code-runner.executorMapByGlob": {
+        "pom.xml": "cd $dir && mvn clean package"
+    },
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "zig": "zig run",
+        "cpp": "cd $dir && clang++ $fileName -std=c++11 -stdlib=libc++ -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runghc",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "sml": "cd $dir && sml $fileName"
+    },
+    "workbench.colorTheme": "Material Theme Palenight High Contrast",
+    "editor.minimap.enabled": false, // removes minimap
+    "editor.renderWhitespace": "none", // removes indent guides
+    "editor.renderLineHighlight": "none", // removes line highlight
+    "editor.overviewRulerBorder": false, // removes border from overview ruler (located on the right, same position as the scrollbar)
+    "editor.hideCursorInOverviewRuler": true, // hides cursor mark in the overview ruler
+    "editor.folding": false, // removes the folding feature
+    "editor.occurrencesHighlight": false, // removes highlights occurrences (still works when you select a word)
+    "editor.glyphMargin": false, // removes the space used mainly for debugging indicators (The INdentation before lines of code number )
+    "explorer.openEditors.visible": 0, // removes the activity bar (the 4 icons at the left of the screen), so now you will have to open the explorer, git, debugger and extension with shortcuts or through the Command Palette
+    "workbench.editor.showIcons": false, // removes icon from opened files in tabs
+    "workbench.editor.tabCloseButton": "true", // removes cross icon from tabs
+    "workbench.statusBar.visible": true, //the status bar (down below)
+    "indenticator.color.dark": "rgba(255,255,255,.1)", // adds a subtle indent guide (needs Indenticator extension)
+    "workbench.colorCustomizations": { // object that allows you to customize your color theme: https://code.visualstudio.com/docs/getstarted/theme-color-reference 
+        "tab.activeBorder": "#0000" // removes border to highlight active tabs (the colors formats are: #RGB, #RGBA, #RRGGBB or #RRGGBBAA)
+    },
+    "editor.guides.indentation": false,
+    "workbench.activityBar.visible": false
+}
