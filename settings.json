@@ -20,7 +20,7 @@
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "terminal.integrated.gpuAcceleration": "off",
     "vscode_vibrancy.opacity": 0.1,
-    "json.schemas": [],
+    "json.schemas": [], 
     "vscode_vibrancy.imports": [
         "/path/to/file"
     ],
@@ -87,6 +87,7 @@
         "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "sml": "cd $dir && sml $fileName"
     },
+
     "workbench.colorTheme": "Material Theme Palenight High Contrast",
     "editor.minimap.enabled": false, // removes minimap
     "editor.renderWhitespace": "none", // removes indent guides
@@ -95,15 +96,13 @@
     "editor.hideCursorInOverviewRuler": true, // hides cursor mark in the overview ruler
     "editor.folding": false, // removes the folding feature
     "editor.occurrencesHighlight": false, // removes highlights occurrences (still works when you select a word)
-    "editor.glyphMargin": false, // removes the space used mainly for debugging indicators (The INdentation before lines of code number )
-    "explorer.openEditors.visible": 0, // removes the activity bar (the 4 icons at the left of the screen), so now you will have to open the explorer, git, debugger and extension with shortcuts or through the Command Palette
+    "editor.glyphMargin": false, // true - turn back on (The Indentation before lines of code number) [removes the space used mainly for debugging indicators] 
     "workbench.editor.showIcons": false, // removes icon from opened files in tabs
-    "workbench.editor.tabCloseButton": "true", // removes cross icon from tabs
+    "workbench.editor.tabCloseButton": "on", // "off" - will removes cross icon from tabs
     "workbench.statusBar.visible": true, //the status bar (down below)
     "indenticator.color.dark": "rgba(255,255,255,.1)", // adds a subtle indent guide (needs Indenticator extension)
     "workbench.colorCustomizations": { // object that allows you to customize your color theme: https://code.visualstudio.com/docs/getstarted/theme-color-reference 
         "tab.activeBorder": "#0000" // removes border to highlight active tabs (the colors formats are: #RGB, #RGBA, #RRGGBB or #RRGGBBAA)
     },
-    "editor.guides.indentation": false,
-    "workbench.activityBar.visible": false
+    "editor.guides.indentation": false
 }
