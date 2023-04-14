@@ -1,11 +1,9 @@
 {
-    "editor.fontSize": 18,
-    "dart.flutterSdkPath": "/Users/capt/flutterSDK/flutter",
+    "editor.fontSize": 14,
+    "dart.flutterSdkPath": "/Users/capt/flutter",
     "editor.inlineSuggest.enabled": true,
     "workbench.iconTheme": "material-icon-theme",
     "editor.formatOnPaste": true,
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "editor.guides.bracketPairs": true,
     "[python]": {
         "editor.formatOnType": true
     },
@@ -18,10 +16,11 @@
         "markdown": false,
         "scminput": false
     },
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "FiraCode-Regular",
     "terminal.integrated.gpuAcceleration": "off",
     "vscode_vibrancy.opacity": 0.1,
     "json.schemas": [
+
     
     ], 
     "vscode_vibrancy.imports": [
@@ -30,7 +29,7 @@
     "vscode_vibrancy.theme": "Solarized Dark+",
     "vscode_vibrancy.refreshInterval": 10,
     "debug.onTaskErrors": "debugAnyway",
-    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cppStandard": "c++17",
     "editor.codeActionsOnSave": {},
     "code-runner.executorMapByGlob": {
 
@@ -108,9 +107,10 @@
     "workbench.statusBar.visible": true, //the status bar (down below)
     "indenticator.color.dark": "rgba(255,255,255,.1)", // adds a subtle indent guide (needs Indenticator extension)
     "workbench.colorCustomizations": { // object that allows you to customize your color theme: https://code.visualstudio.com/docs/getstarted/theme-color-reference 
-        "tab.activeBorder": "#0000" // removes border to highlight active tabs (the colors formats are: #RGB, #RGBA, #RRGGBB or #RRGGBBAA)
+        "tab.activeBorder": "#0000", // removes border to highlight active tabs (the colors formats are: #RGB, #RGBA, #RRGGBB or #RRGGBBAA)
+        "editorIndentGuide.backgro und": "#93939332",
+        "editorIndentGuide.activeBackground": "#5757575e",
     },
-    "editor.guides.indentation": false,
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
@@ -125,5 +125,54 @@
     },
     "liveServer.settings.CustomBrowser": "chrome",
     "liveServer.settings.ChromeDebuggingAttachment": false,
-    "window.zoomLevel": 1
+    "editor.lineHeight": 0,
+    "[dart]": {
+		// Automatically format code on save and during typing of certain characters
+		// (like `;` and `}`).
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+
+		// Draw a guide line at 80 characters, where Dart's formatting will wrap code.
+		"editor.rulers": [80],
+
+		// Disables built-in highlighting of words that match your selection. Without
+		// this, all instances of the selected text will be highlighted, interfering
+		// with Dart's ability to highlight only exact references to the selected variable.
+		"editor.selectionHighlight": false,
+
+		// By default, VS Code prevents code completion from popping open when in
+		// "snippet mode" (editing placeholders in inserted code). Setting this option
+		// to `false` stops that and allows completion to open as normal, as if you
+		// weren't in a snippet placeholder.
+		"editor.suggest.snippetsPreventQuickSuggestions": false,
+
+		// By default, VS Code will pre-select the most recently used item from code
+		// completion. This is usually not the most relevant item.
+		//
+		// "first" will always select top item
+		// "recentlyUsedByPrefix" will filter the recently used items based on the
+		//     text immediately preceding where completion was invoked.
+		"editor.suggestSelection": "first",
+
+		// Allows pressing <TAB> to complete snippets such as `for` even when the
+		// completion list is not visible.
+		"editor.tabCompletion": "onlySnippets",
+
+		// By default, VS Code will populate code completion with words found in the
+		// current file when a language service does not provide its own completions.
+		// This results in code completion suggesting words when editing comments and
+		// strings. This setting will prevent that.
+		"editor.wordBasedSuggestions": false,
+	},
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+    "editor.guides.indentation": false,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.guides.bracketPairs": true,
+    "window.zoomLevel": 1,
+    "editor.fontFamily": "FiraCode-Regular"
 }
